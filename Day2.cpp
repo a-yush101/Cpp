@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
-int main(){
+void inc(){
     static int x=5;
-    // float y = x/2;
-    // cin>>x;
+    x++;
     cout<<x<<endl;
-    // cout<<"Hello World"<<endl;
+}
+int main(){
+    inc();
+    inc();
     return 0;
 }
